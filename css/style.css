@@ -1,0 +1,230 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body {
+	margin: 1%;
+	padding: 1%;
+	font-size: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+header .head-title {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+header .head-title-2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.intro {
+    background: url("../images/mu-background.jpeg") rgb(205, 0, 0);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+	font-size: 2em; 
+	font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Make the h2 heading*/
+h2 {
+	font-size: 1.3em; 
+	font-weight: bold;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Style the images*/
+img {
+    height: 200px;
+    width: 200px;
+    border: 3px solid transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.settohover:hover {
+    opacity: 0.3;
+}
+
+/* Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer {
+	border: 2px solid transparent;
+	margin: 10px 0;
+}
+
+/* Change the styling for all of the list 
+items in the nav section */
+nav {
+   padding: 20px 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+	background-color: rgb(205, 0, 0);
+	padding: 10px 5px;
+	width: 15.45%;
+	border: 1px solid transparent;
+	display: table-cell;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Change the styling for all titles of
+the list items in the nav section */
+nav .active a {
+    color: yellow;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Change to paragraphs */
+main p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    padding: 10px 15px;
+    background: yellow;
+    border: 2px solid black;
+}
+
+@keyframes animate {
+    from {
+        width: 25px;
+        opacity: 0;
+    } to {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+#img-form {
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: animate 2.5s;
+}
+
+form legend {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+form label {
+    font-size: 13px;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #a0a0a0;
+    height: 27px;
+    line-height: 27px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form-name,
+.form-phone,
+.form-email,
+.form-message,
+.form-checkbox {
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.form-checkbox label {
+    padding: 0;
+    font-size: 16px;
+    display: inline-block;
+}
+
+form button {
+    background-color: rgb(205, 0, 0);
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 40px;
+    width: 25%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Changes to footer */
+footer {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+/* No changes to link */
+/* Source: https://www.w3schools.com/css/css_link.asp */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
