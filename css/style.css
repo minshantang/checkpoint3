@@ -37,6 +37,11 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 h1 {
@@ -68,6 +73,14 @@ img {
     padding-right: 10px;    
     border-radius: 20px;
     margin: 10px;
+}
+
+img .flex-img {
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .settohover:hover {
