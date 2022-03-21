@@ -10,18 +10,24 @@ header {
     text-align: center;
 }
 
+.logo {
+    grid-row: 1 / span 1
+}
+
 /*Make the h1 heading bigger with a bold font*/
-header .head-title {
+.head-title {
     color: white;
     font-size: 3em;
     font-weight: bold;
     padding-top: 30px;
+    grid-row: 2 / span 1;
 }
 
-header .head-title-2 {
+.head-title-2 {
     font-size: 2em;
     font-weight: bold;
     color: white;
+    grid-row: 3 / span 1;
 }
 
 header img {
@@ -240,4 +246,10 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #img-form {
+      animation: none;
+    }
 }
